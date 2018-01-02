@@ -10,6 +10,8 @@ Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ab
 
 ## Installation
 
+Download already compiled binaries from [Releases](https://github.com/dandar3/android-aapt-wrapper/releases) tab (top)
+
 #### Windows
 * Navigate to `android-sdk\build-tools\xx.y.z\`
 * Rename `aapt.exe` to `aapt-original.exe`
