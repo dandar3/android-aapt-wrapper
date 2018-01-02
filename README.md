@@ -1,4 +1,4 @@
-Wrapper for Android AAPT tool to pass `--no-version-vectors` when packaging.
+Wrapper for `Android Asset Packaging Tool` (AAPT) to pass `--no-version-vectors` when packaging.
 
 This is useful for non-Gradle builds that cannot pass this parameter (e.g. Android ADT not maintained anymore), to avoid apps using AppCompat to crash with:
 
