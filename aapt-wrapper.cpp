@@ -22,6 +22,7 @@ using namespace std;
 static const string VERSION = "1.0";
 static const string DATE    = "31 Dec 2017";
 static const string PROJECT = "https://github.com/dandar3/android-aapt-wrapper";
+static const string NO_VERSION_VECTOR_PARAM = " --no-version-vectors";
 
 #if defined(WIN32)
 static const char   PATH_SEPARATOR = '\\';
@@ -56,17 +57,17 @@ int main(int argc, char *argv[]) {
     // No need to quote...
     else {
       cmdline.append(" ");
-      cmdline.append(argv[i]);    
+      cmdline.append(argv[i]);
     }
   }
   
   // 'package' action...
-  if (argc > 1 && strcmp(argv[1], "package") == 0) {
-    cmdline.append(" --no-version-vectors");
+  if (argc > 1 && strcmp(argv[1], "package") == 0 && cmdline.find(NO_VERSION_VECTOR_PARAM) == string::npos) {
+    cmdline.append(NO_VERSION_VECTOR_PARAM);
   }
   
   // Print new command line...
-  cout << "Android Asset Packaging Tool - Wrapper" << endl;
+  cout << endl << "Android Asset Packaging Tool - Wrapper" << endl;
   cout << "Version "   << VERSION << " (" << DATE << ")" << endl;
   cout << PROJECT      << endl    << endl;
   cout << "Command: "  << endl;
