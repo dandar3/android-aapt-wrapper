@@ -19,8 +19,8 @@
 
 using namespace std;
 
-static const string VERSION = "1.0";
-static const string DATE    = "31 Dec 2017";
+static const string VERSION = "1.1";
+static const string DATE    = "17 Jan 2018";
 static const string PROJECT = "https://github.com/dandar3/android-aapt-wrapper";
 static const string NO_VERSION_VECTOR_PARAM = " --no-version-vectors";
 
